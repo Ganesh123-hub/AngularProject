@@ -1,0 +1,32 @@
+<div class="card m-auto" style="width: 50%;">
+    <div class="card-body">
+        <h5 class="card-title text-center"> Register Here</h5>
+        <br/>
+        <form (ngSubmit)="getFun()">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Id</span>
+                <input name="uName" [(ngModel)]="data.uName"
+                      type="text" class="form-control" placeholder="Username" autocomplete="off" >
+            </div> <br />
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Pass</span>
+                <input type="text" class="form-control" placeholder="Password" autocomplete="off"
+                        name="uPass" [(ngModel)]="data.uPass">
+            </div> <br/>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-info" >
+                   <span class="fw-500"> Success </span>
+                </button>
+            </div>
+        </form>
+        <!-- <br/> {{ data | json }} -->
+        <a href="#" class="card-link">
+            <span class="fw-bold text-danger float-end">Login ..</span>
+        </a>
+    </div>
+</div>
+
+
+<!--
+    
+-->
